@@ -504,4 +504,16 @@ textarea.input { padding: 0.8rem 1.2rem; min-height: 140px; border-radius: .5rem
     .services-content { padding-right: 3.5rem; }
 }
 
+.custom-img {
+   width: 250px;
+  height: auto;
+  margin-left: -42px;
+  border: 5px solid #e1094a;
+  object-fit: cover;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  box-shadow: 0 0 30px rgba(225, 9, 74, 0.3);
+  transition: 0.4s ease;
+}
+
+
 
