@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vikas-Sharma</title>
+    <title>Vikas Sharma – Trusted SEO Consultant & PR Expert India</title>
+    <meta name="description"
+        content="Vikas Sharma – SEO consultant & PR strategist delivering organic traffic, top-tier media coverage, and brand recognition through powerful campaigns.">
+
     <link rel="icon" type="image/x-icon" href="img/fv.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,7 +19,7 @@
 
     <link rel="stylesheet" href="vikash.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
+
 </head>
 
 <body>
@@ -47,9 +50,7 @@
                             <a href="#skills" class="nav-link">Skills</a>
                         </li>
 
-                       <!-- <li class="nav-item">
-  <a href="tel:8168420559" class="nav-link">Call</a>
-</li> -->
+
 
                         <li class="nav-item">
                             <a href="#services" class="nav-link">Services</a>
@@ -64,11 +65,10 @@
 
             <!-- <div class="btn-share">
                 <i class="uil uil-share-alt social-share"></i>
-            </div>
-
+            </div> -->
             <div class="nav-close" id="nav-close">
                 <i class="uil uil-times"></i>
-            </div> -->
+            </div>
         </nav>
     </aside>
 
@@ -78,7 +78,7 @@
                 <div class="home-social">
                     <span class="home-social-follow">Follow Me</span>
                     <div class="home-social-links">
-                         <a href="https://www.facebook.com/vikas.sharma.771205/" target="_blank" class="footer-social">
+                        <a href="https://www.facebook.com/vikas.sharma.771205/" target="_blank" class="footer-social">
                             <i class="uil uil-facebook-f"></i>
                         </a>
 
@@ -86,28 +86,30 @@
                             <i class="uil uil-instagram"></i>
                         </a>
                         <a href="https://wa.me/8168420559" target="_blank" class="footer-social">
-                                 <i class="uil uil-whatsapp" ></i>
+                            <i class="uil uil-whatsapp"></i>
                         </a>
-                        <a href="https://www.upwork.com/freelancers/~016f837533144b1f4a" target="_blank" class="footer-social">
-                               <i class="fa-brands fa-upwork"></i>
+                        <a href="https://www.upwork.com/freelancers/~016f837533144b1f4a" target="_blank"
+                            class="footer-social">
+                            <i class="fa-brands fa-upwork"></i>
                         </a>
 
-                    
+
                     </div>
                 </div>
 
-                <img src="img/v5.png" alt="" class="home-img custom-img" >
+                <img src="img/v5.png" alt="" class="home-img custom-img">
 
                 <div class="home-data">
                     <h1 class="home-title">Hi, I'm Vikas</h1>
-                    <h3 class="home-subtitle">Seo Executive</h3>
+                    <h3 class="home-subtitle">SEO consultant & PR strategist
+                    </h3>
                     <p class="home-description">I specialize in keyword research, on-page & off-page SEO, technical
                         audits, backlink strategies, and Google Analytics to boost website visibility and traffic.
                     </p>
-                  <a href="img/Vikas CV.pdf" class="button" download>
-  <i class="uil uil-import button-icon"></i>
-  Download Cv
-</a>
+                    <a href="img/Vikas CV.pdf" class="button" download>
+                        <i class="uil uil-import button-icon"></i>
+                        Download Cv
+                    </a>
 
                 </div>
 
@@ -137,7 +139,7 @@
                             <h3 class="info-title">Email</h3>
                             <!-- <a href="mailto:Sharma.vikas93951@gmail.com"
                                 class="info-subtitle">Sharma.vikas93951@gmail.com</a> -->
-                                <span class="info-subtitle">Sharma.vikas93951@gmail.com</span>
+                            <span class="info-subtitle">Sharma.vikas93951@gmail.com</span>
                         </div>
 
                     </div>
@@ -147,11 +149,65 @@
 
         </section>
 
+
+      >
+
+
+        <h2 class="section-title mt-4" data-heading="">Our Achievements</h2>
+
+        <div class="counter-section" id="achievement-section">
+
+            <div class="counter-box">
+                <div class="counter-item">
+                    <div class="counter-number" data-target="11">0</div>
+                    <div class="counter-label">Global Awards</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-target="1000">0</div>
+                    <div class="counter-label">International Clients</div>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-number" data-target="300">0</div>
+                    <div class="counter-label">Media Connections</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            let counted = false;
+
+            $(window).on("scroll", function () {
+                let oTop = $("#achievement-section").offset().top - window.innerHeight + 100;
+                if (!counted && $(window).scrollTop() > oTop) {
+                    $(".counter-number").each(function () {
+                        let $this = $(this),
+                            countTo = $this.attr("data-target");
+
+                        $({ countNum: 0 }).animate({ countNum: countTo }, {
+                            duration: 2000,
+                            easing: "swing",
+                            step: function () {
+                                $this.text(Math.floor(this.countNum));
+                            },
+                            complete: function () {
+                                $this.text(countTo + "+");
+                            }
+                        });
+                    });
+                    counted = true;
+                }
+            });
+        </script>
+
+
         <section class="about section" id="about">
             <h2 class="section-title" data-heading="My Intro">About me</h2>
 
             <div class="about-container container grid">
-                <img src="img/vk2.png" alt="" class="about-img">
+                <img src="img/2.png" alt="" class="about-img">
 
                 <div class="about-data">
                     <h3 class="about-heading">Hi, I'm Vikas, based in India</h3>
@@ -265,7 +321,7 @@
 
                         <i class="uil uil-angle-down skills-arrow"></i>
                     </div>
-                    <div class="skills-header skills-active" data-target="#frontend">
+                    <div class="skills-header skills-active" data-target="#ofpage">
                         <i class="uil uil-brackets-curly skills-icon"></i>
 
                         <div>
@@ -307,7 +363,18 @@
                         <div class="skills-list grid">
                             <div class="skills-data">
                                 <div class="skills-titles">
-                                    <h3 class="skills-name">On-Page SEO</h3>
+                                    <h3 class="skills-name">Keyword Research & Placement</h3>
+                                    <span class="skills-number">95%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 95%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Meta Tags Optimization</h3>
                                     <span class="skills-number">90%</span>
                                 </div>
 
@@ -318,34 +385,23 @@
 
                             <div class="skills-data">
                                 <div class="skills-titles">
-                                    <h3 class="skills-name">Off-Page SEO</h3>
-                                    <span class="skills-number">80%</span>
-                                </div>
-
-                                <div class="skills-bar">
-                                    <span class="skills-percentage" style="width: 80%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills-data">
-                                <div class="skills-titles">
-                                    <h3 class="skills-name">Technical SEO</h3>
-                                    <span class="skills-number">70%</span>
-                                </div>
-
-                                <div class="skills-bar">
-                                    <span class="skills-percentage" style="width: 70%;"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills-data">
-                                <div class="skills-titles">
-                                    <h3 class="skills-name">Outreach SEO</h3>
+                                    <h3 class="skills-name">High-quality, original content</h3>
                                     <span class="skills-number">85%</span>
                                 </div>
 
                                 <div class="skills-bar">
                                     <span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Image SEO (Alt Text & Compression)</h3>
+                                    <span class="skills-number">100%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 100%;"></span>
                                 </div>
                             </div>
                             <div class="skills-data">
@@ -360,12 +416,60 @@
                             </div>
                         </div>
                     </div>
+                    <div class="skills-group " data-content id="ofpage">
+                        <div class="skills-list grid">
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Backlink Building</h3>
+                                    <span class="skills-number">95%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 95%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Social Media Sharing & Signals </h3>
+                                    <span class="skills-number">85%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Guest Posting</h3>
+                                    <span class="skills-number">100%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 100%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Business Listing & Local SEO</h3>
+                                    <span class="skills-number">85%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 85%;"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
                     <div class="skills-group" data-content id="design">
                         <div class="skills-list grid">
                             <div class="skills-data">
                                 <div class="skills-titles">
-                                    <h3 class="skills-name">Figma</h3>
+                                    <h3 class="skills-name">Website Speed Optimization</h3>
                                     <span class="skills-number">90%</span>
                                 </div>
 
@@ -376,23 +480,33 @@
 
                             <div class="skills-data">
                                 <div class="skills-titles">
-                                    <h3 class="skills-name">Sketch</h3>
-                                    <span class="skills-number">80%</span>
+                                    <h3 class="skills-name">Mobile-Friendliness</h3>
+                                    <span class="skills-number">100%</span>
                                 </div>
 
                                 <div class="skills-bar">
-                                    <span class="skills-percentage" style="width: 80%;"></span>
+                                    <span class="skills-percentage" style="width: 100%;"></span>
                                 </div>
                             </div>
 
                             <div class="skills-data">
                                 <div class="skills-titles">
-                                    <h3 class="skills-name">PhotoShop</h3>
-                                    <span class="skills-number">70%</span>
+                                    <h3 class="skills-name">XML Sitemap & Robots.txt Setup</h3>
+                                    <span class="skills-number">100%</span>
                                 </div>
 
                                 <div class="skills-bar">
-                                    <span class="skills-percentage" style="width: 70%;"></span>
+                                    <span class="skills-percentage" style="width: 100%;"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">HTTPS (SSL Certificate Implementation)</h3>
+                                    <span class="skills-number">100%</span>
+                                </div>
+
+                                <div class="skills-bar">
+                                    <span class="skills-percentage" style="width: 100%;"></span>
                                 </div>
                             </div>
 
@@ -403,7 +517,7 @@
                         <div class="skills-list grid">
                             <div class="skills-data">
                                 <div class="skills-titles">
-                                    <h3 class="skills-name">PHP</h3>
+                                    <h3 class="skills-name">Personalized Email Outreach</h3>
                                     <span class="skills-number">80%</span>
                                 </div>
 
@@ -414,7 +528,7 @@
 
                             <div class="skills-data">
                                 <div class="skills-titles">
-                                    <h3 class="skills-name">Python</h3>
+                                    <h3 class="skills-name">Prospect Research & Targeting</h3>
                                     <span class="skills-number">80%</span>
                                 </div>
 
@@ -425,7 +539,7 @@
 
                             <div class="skills-data">
                                 <div class="skills-titles">
-                                    <h3 class="skills-name">MySQL</h3>
+                                    <h3 class="skills-name">Follow-up Strategy</h3>
                                     <span class="skills-number">70%</span>
                                 </div>
 
@@ -436,7 +550,7 @@
 
                             <div class="skills-data">
                                 <div class="skills-titles">
-                                    <h3 class="skills-name">Firebase</h3>
+                                    <h3 class="skills-name">Relationship Building & Networking</h3>
                                     <span class="skills-number">75%</span>
                                 </div>
 
@@ -831,8 +945,8 @@
                         <div class="contact-card">
                             <i class="uil uil-envelope-edit contact-card-icon"></i>
                             <h3 class="contact-card-title">Email</h3>
-                            
-                                 <span class="contact-card-data">Sharma.vikas93951@gmail.com</span>
+
+                            <span class="contact-card-data">Sharma.vikas93951@gmail.com</span>
 
 
                         </div>
@@ -840,8 +954,8 @@
                         <div class="contact-card">
                             <i class="uil uil-whatsapp contact-card-icon"></i>
                             <h3 class="contact-card-title">Whatsapp</h3>
-                        
-                                 <span class="contact-card-data">8168420559</span>
+
+                            <span class="contact-card-data">8168420559</span>
 
 
                         </div>
@@ -888,6 +1002,60 @@
             </div>
 
         </section>
+
+        <h2 class="section-title" data-heading="Our clients">Brands We Admire Working With
+        </h2>
+
+        <div id="ourclients">
+
+            <div class="clients-wrap">
+                <ul id="clientlogo">
+                    <li><img src="https://i.ibb.co/N92D9G3/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-removebg-preview.png"
+                            alt="Logo"></li>
+                    <li><img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png"
+                            alt="Logo"></li>
+                    <li><img src="https://i.ibb.co/jkSTBVP/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-2-removebg-preview.png"
+                            alt="Logo"></li>
+                    <li><img src="https://i.ibb.co/KNFTLHv/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-1.png"
+                            alt="Logo"></li>
+                    <li><img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png"
+                            alt="Logo"></li>
+                    <li><img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png"
+                            alt="Logo"></li>
+                    <li><img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png"
+                            alt="Logo"></li>
+                    <li><img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png"
+                            alt="Logo"></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                let $slider = $('#clientlogo');
+                let slideWidth = $('#clientlogo li').outerWidth(true);
+                let delay = 2000; // 2 sec pause
+                let speed = 1000; // 1 sec slide
+
+                function slideOneByOne() {
+                    $slider.animate({ left: `-${slideWidth}px` }, speed, function () {
+                        $slider.append($('#clientlogo li:first'));
+                        $slider.css('left', 0);
+                    });
+                }
+
+                setInterval(slideOneByOne, delay + speed);
+            });
+        </script>
+
+
+
+
+        <!-- CSS -->
+
+
+
 
         <footer class="footer">
             <div class="footer-bg">
@@ -941,7 +1109,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
-        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 </body>
 
 </html>
